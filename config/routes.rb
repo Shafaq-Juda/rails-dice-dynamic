@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-get("/", {:controller=>"", :action=>""})
-get("/:roll", {:controller=>"", :action=>""})
+  get("/", {:controller=>"diceroll", :action=>"home"})
+  get("/:dice/:roll/:sides", {:controller=>"diceroll", :action=>"roll"})
 end
